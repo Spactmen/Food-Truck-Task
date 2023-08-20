@@ -1,0 +1,127 @@
+.carousel_container{
+    margin: 6rem 0;
+}
+
+.carousel{
+    display: flex;
+    gap: 3%;
+    /* border: 1px solid red; */
+}
+.card{
+    width: 35%;
+    padding: 2rem 1.8rem;
+    border: 1.37px solid rgba(147, 162, 211, 0.38);
+    border-radius: 20px;
+    
+}
+
+.card:nth-child(2){
+    /* margin: 0 4rem; */
+}
+
+
+.card_image_div{
+    position: relative;
+    width: 100%;
+    height: 25rem;
+}
+
+.card_image{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 21px;
+}
+
+.card h3{
+    font-family: "Poppins",sans-serif;
+    color: var(--clr-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 128%;
+    /* text-align: center; */
+    margin: 2rem 0 1.1rem 0;
+}
+
+.card p{
+    color: var(--clr-light-grey);
+    font-family: "Poppins",sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.3px;
+}
+
+.card button{
+    cursor: pointer;
+    color: #424961;
+    font-family: "Source Sans 3",sans-serif;
+    font-size: 1.45rem;
+    line-height: 216%;
+    /* letter-spacing: 0.2px; */
+    padding: 0.3rem 1.6rem;
+    background: transparent;
+    border: 1px solid #424961;
+    border-radius: 21px;
+    margin: 2rem 0 2rem 0;
+}
+
+.carousel_buttons {
+    width: max-content;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 4rem auto;
+}
+.carousel_buttons button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+
+.carousel_pagination p{
+    font-size: 2rem;
+    font-family: "Source Sans 3",sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width:700px){
+    .carousel_container{
+        margin: 3rem 0;
+    }
+    .carousel{
+        flex-direction: column;
+    }
+    .card{
+        padding: 2rem 2.5rem;
+        margin: 0 auto 2rem auto;
+        width: 80%;
+    }
+    .card_image_div{
+        height: 20rem;
+    }
+    .carousel_buttons{
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width:600px){
+    .card{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:500px){
+    .card h3{
+        font-size: 16px;
+    }
+    .card p{
+        font-size: 1.2rem;
+    }
+    .card button{
+        font-size: 1.1rem;
+    }
+}
